@@ -4,6 +4,43 @@
 
 **The Claude Agent SDK lets you build purpose-built AI Agents in Python. Each agent gets its own system prompt, its own tool set and its own scope. The SDK handles the agentic loop. You define what each agent does.**
 
+## Agent SDK vs Agent Teams
+
+Two different layers solving two different problems.
+
+### Claude Agent SDK
+
+A Python/TypeScript package for building **your own agents** programmatically. You write code. You define system prompts, tools, permissions. You control the agentic loop from your application.
+
+The SDK is a developer tool. It produces agents that run in your infrastructure, your pipelines, your products. The seven agents in the blog post — each one is a Python script you wrote and deployed yourself.
+
+**You are the builder.** The SDK is your construction material.
+
+### Claude Agent Teams
+
+A feature inside **Claude Code** (the CLI tool) where Claude itself spawns and coordinates multiple sub-agents during a single task. You give Claude a complex prompt. Claude decides it needs help. Claude creates specialist agents on the fly to handle parts of the work.
+
+For example you say "refactor this authentication module." Claude might spawn a research agent to understand the current code, a planning agent to design the new architecture and an implementation agent to write the changes. You did not define those agents. Claude did.
+
+**Claude is the builder.** The agents are its internal workforce.
+
+### The Distinction
+
+| | Agent SDK | Agent Teams |
+|---|----------|-------------|
+| **Who defines the agents** | You (the developer) | Claude (the model) |
+| **Where they run** | Your code, your infra | Inside Claude Code sessions |
+| **Configuration** | Explicit (system prompts, tools, permissions) | Implicit (Claude decides scope and delegation) |
+| **Use case** | Production agent systems, repeatable workflows | Ad-hoc complex tasks during a Claude Code session |
+| **Control** | Full — you set every parameter | Minimal — Claude orchestrates autonomously |
+| **Persistence** | Your agents exist as code you maintain | Agents are ephemeral, created per task |
+
+The SDK is for when you know what agents you need and want to ship them. Agent Teams is for when the task is complex enough that Claude benefits from dividing the work internally.
+
+One is infrastructure. The other is behaviour.
+
+---
+
 ## The Core Idea
 
 Most agent frameworks give you a generic agent and expect you to make it do everything. The Claude Agent SDK takes the opposite approach. You build multiple specialised agents, each with a narrow mandate, restricted tools and a focused system prompt.
