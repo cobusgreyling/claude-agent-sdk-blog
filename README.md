@@ -9,7 +9,6 @@
 
 Two different layers solving two different problems.
 
-![Claude Agent SDK](images/claude-agent-sdk.png)
 
 ### Claude Agent SDK
 
@@ -26,6 +25,8 @@ A feature inside **Claude Code** (the CLI tool) where Claude itself spawns and c
 For example you say "refactor this authentication module." Claude might spawn a research agent to understand the current code, a planning agent to design the new architecture and an implementation agent to write the changes. You did not define those agents. Claude did.
 
 **Claude is the builder.** The agents are its internal workforce.
+
+![Claude Agent SDK](images/claude-agent-sdk.png)
 
 ### The Distinction
 
