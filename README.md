@@ -14,7 +14,7 @@ Two different layers solving two different problems.
 
 A Python/TypeScript package for building **your own agents** programmatically. You write code. You define system prompts, tools, permissions. You control the agentic loop from your application.
 
-The SDK is a developer tool. It produces agents that run in your infrastructure, your pipelines, your products. The seven agents in the blog post — each one is a Python script you wrote and deployed yourself.
+The SDK is a developer tool. It produces agents that run in your infrastructure, your pipelines, your products. The seven agents in the blog post, each one is a Python script you wrote and deployed yourself.
 
 **You are the builder.** The SDK is your construction material.
 
@@ -80,11 +80,11 @@ async for message in query(
 
 Three things define an agent.
 
-**System prompt** — what the agent is. A code reviewer. A contract analyst. An invoice processor. The system prompt sets the agent's identity and constraints.
+**System prompt**  what the agent is. A code reviewer. A contract analyst. An invoice processor. The system prompt sets the agent's identity and constraints.
 
-**Allowed tools** — what the agent can do. Read files. Run shell commands. Search the web. Fetch URLs. Each agent gets only the tools it needs. A read-only agent cannot write. A search agent cannot edit files.
+**Allowed tools**  what the agent can do. Read files. Run shell commands. Search the web. Fetch URLs. Each agent gets only the tools it needs. A read-only agent cannot write. A search agent cannot edit files.
 
-**Permission mode** — how much autonomy the agent has. Default mode asks the user before destructive actions. Accept-edits mode auto-approves file changes. Bypass mode runs fully autonomous.
+**Permission mode**  how much autonomy the agent has. Default mode asks the user before destructive actions. Accept-edits mode auto-approves file changes. Bypass mode runs fully autonomous.
 
 ## The Tool Surface
 
@@ -120,7 +120,7 @@ server = create_sdk_mcp_server(
 )
 ```
 
-## Subagents — Specialisation Through Delegation
+## Subagents  Specialisation Through Delegation
 
 The real power is subagents. A parent agent can spawn specialised child agents for focused subtasks. Each subagent runs in its own context. The parent only sees the summary, not the intermediate tool calls.
 
