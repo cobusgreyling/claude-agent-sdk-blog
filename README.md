@@ -8,6 +8,8 @@
 
 Two different layers solving two different problems.
 
+![Claude Agent SDK](images/claude-agent-sdk.png)
+
 ### Claude Agent SDK
 
 A Python/TypeScript package for building **your own agents** programmatically. You write code. You define system prompts, tools, permissions. You control the agentic loop from your application.
