@@ -1,4 +1,5 @@
-![Claude Agent SDK](images/claude-agent-sdk.png)
+![Claude Agent SDK](images/image-12.jpg)
+
 
 # Building Specialised AI Agents with the Claude Agent SDK
 
